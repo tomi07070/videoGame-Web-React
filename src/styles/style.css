@@ -1,8 +1,33 @@
+/* tailwind.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+  
+
 *{
     margin: 0;
     padding: 0;
     font-family: monospace;
     list-style: none;
+}
+/* Your CSS file */
+.sectiona{
+    margin-left: 80px;
+}
+.h1-a1{
+    color: #fff;
+    font-size: 40px;
+}
+.h1-c{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.cont-a{
+    margin-left: 80px;
 }
 body{
     background-color: #0c0909;
@@ -12,6 +37,7 @@ body{
     height: 100px;
     background-color: rgb(7, 0, 13);
 }
+
 #ul-n{
     display: flex;
     
@@ -183,6 +209,11 @@ body{
     padding: 10px;
     border-radius: 15px;
 }
+.btn-h:hover{
+    background-color: #000;
+    color: #fff;
+    scale: 1.5;
+}
 .img-a-c{
     margin-left: 40px;
 }
@@ -197,7 +228,7 @@ body{
 
 .img2-a{
     margin-top: 120px;
-    margin-left: 900px;
+    margin-left: 800px;
 }
 .h1-a{
     color: #fff;
@@ -211,7 +242,7 @@ body{
     font-size: 20px;
     position: absolute;
     top: 790px;
-    left: 100px;
+    left: 160px;
     width: 800px;
 }
 .img-g{
@@ -338,7 +369,7 @@ body{
 
 .ul-achi{
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Crea tres columnas de igual tamaño */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
 }
 
@@ -355,6 +386,8 @@ body{
 }
 .img-achi{
     border-radius: 10px;
+    margin-left: 220px;
+    padding: 5px;
 }
 .name{
     display: block;
@@ -604,14 +637,16 @@ body{
 }
 @media(max-width: 321px){
     .img-h{
-        margin-left: 130px;
-        width: 500px;
+        margin-left: 80px;
+        width: 400px;
+        margin-bottom: 50px;
     }
     .ul-1-n{
         left: 200px;
     }
     .footer{
         width: 150%;
+        margin-top: 230px;
     }
     .p-a{
         width: 300px;
