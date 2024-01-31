@@ -21,6 +21,15 @@
     color: #fff;
     font-size: 40px;
 }
+
+.div-container {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr); /* Una columna */
+    margin-left: 1rem; /* Márgen izquierdo de 1rem */
+    margin-top: 50px; /* Márgen superior de 20px */
+  }
+  
+
 .h1-c{
     display: flex;
     justify-content: center;
@@ -54,6 +63,9 @@ body{
     padding: 20px;
     
 }
+/* Estilo para la lista no ordenada (ul) */
+
+
 .li-2-n{
     list-style: none;
     padding-left: 20px;
@@ -465,6 +477,9 @@ body{
     display: none;
 }
 
+@media(max-width: 1441px){
+    
+}
 @media(max-width: 1024px){
     
     .bars-cont {/*copia*/
@@ -520,23 +535,38 @@ body{
     .form-r{
         margin-left: 200px;
     }
+    .img-achi{
+        margin-left: 120px;
+    }
 }
 @media(max-width: 768px){
     .ul-1-n{
         left: 550px;
     }
     .p-a{
-        left: 100px;
-        top: 450px;
+        left: 150px;
+        top: 490px;
     }
     .p2-a{
         width: 500px;
+        top: 850px;
     }
     .h1-a{
         margin-left: -150px;
+        margin-top: 40px;
     }
     .img2-a{
-        margin-left: 100px;
+        margin-left: -10px;
+    }
+    .h1-a1{
+        margin-left: -80px;
+        margin-bottom: 30px;
+    }
+    .img-a{
+        margin-left: 70px;
+    }
+    .img-achi{
+        margin-left: 90px;
     }
     .gameList{
         grid-template-columns: repeat(1, 1fr);
@@ -555,37 +585,53 @@ body{
 }
 @media(max-width: 426px){
     .header{
-        width: 140%;
-    }
-    .ul-1-n{
-        left: 350px;
+        width: 100%;
     }
     .img-h{
-        margin-left: 100px;
+        margin-left: 0px;
+        width: 350px;
     }
     .h1-h{
-        margin-left: 100px;
+        margin-left: 20px;
     }
     .btn-h{
-        margin-left: 100px;
+        margin-left: 0px;
     }
     .footer{
-        width: 140%;
+        width: 100%;
     }
     .img2-a{
-        margin-left: 50px;
+        margin-left: -70px;
+        height: 300px;
+    }
+    .h1-a{
+        margin-left: -270px;
+    }
+    .img-a{
+        margin-left: -10px;
+    }
+    .p-a{
+        left: 20px;
+        width: 400px;
+    }
+    .p2-a{
+        left: 50px;
+        width: 400px;
     }
     .gameList{
-        margin-left: 100px;
+        margin-left: 10px;
     }
     .input-c{
         display: flex;
         justify-content: center;
-        margin-left:100px;
+        margin-left:10px;
         width: 430px;
     }
     .img{
-        margin-left: 170px;
+        margin-left: 60px;
+    }
+    .img-achi{
+        margin-left: 40px;
     }
     .ul-g1{
         margin-right: 0px;
@@ -607,32 +653,69 @@ body{
 }
 @media(max-width: 376px){
     .header{
-        width: 150%;
+        width: 103%;
+    }
+    .footer{
+        width: 103%;
     }
     .p-a{
-        left: 50px;
+        left: 30px;
+        width: 340px;
     }
     .p2-a{
-        left: 50px;
-        top: 850px;
+        left: 30px;
+        top: 900px;
+        width: 340px;
     }
     .h1-a{
-        margin-left: -200px;
-    }
-    .ul-1-n{
-        left: 300px;
+        margin-left: -300px;
+        margin-top: 120px;
     }
     .img2-a{
-        margin-left: 20px;
+        margin-left: -50px;
+        margin-top: 600px;
     }
     .gameList{
-        margin-left: 50px;
+        margin-left: 10px;
+    } 
+    .img-g{
+        width: 350px;
+    }
+    .ul-g{
+        margin-left: 210px;
     }
     .input-c{
-        margin-left: 50px;
+        margin-left: 10px;
+        width: 380px;
     }
     .screenshots-container{
         margin-left: 25px;
+    }
+    .img{
+        width: 350px;
+        margin-left: 5px;
+    }
+    .ul-g1{
+        margin-right: 20px;
+    }
+    .p{
+        margin-left: -30px;
+    }
+    .h2-achi{
+        margin-left: 20px;
+    }
+    .img-achi{
+        margin-left: 30px;
+    }
+    .li-achi{
+        margin-left: 10px;
+    }
+    .ul-achi{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .div-container{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 2.5px;
     }
 }
 @media(max-width: 321px){
@@ -641,12 +724,18 @@ body{
         width: 400px;
         margin-bottom: 50px;
     }
-    .ul-1-n{
-        left: 200px;
+    .h1-h{
+        margin-left: 110px;
+    }
+    .btn-h{
+        margin-left: 90px;
     }
     .footer{
-        width: 150%;
+        width: 125%;
         margin-top: 230px;
+    }
+    .header{
+        width: 125%;
     }
     .p-a{
         width: 300px;
@@ -656,30 +745,33 @@ body{
     }
     .h1-a{
         margin-left: -300px;
-        margin-top: 50px;
+        margin-top: 120px;
     }
     .img2-a{
-        width: 400px;
-        margin-top: 650px;
+        margin-top: 750px;
     }
     .gameList{
-        margin-left: 40px;
+        margin-left: 60px;
     }
     .input-c{
-        margin-left: 40px;
+        margin-left: 20px;
     }
     .img{
+        width: 600px;
+        margin-left: 70px;
+    }
+    .img-g{
         width: 400px;
     }
     .ul-achi{
         grid-template-columns: repeat(1, 1fr);
-        margin-left: 100px;
+        margin-left: 50px;
     }
-    .screenshots-container{
-        margin-left: 40px;
+    .div-container{
+        margin-left: 60px;
     }
     .screenshot{
-        width: 400px;
+        width: 600px;
     }
     .ul-g1{
         margin-left: 60px;

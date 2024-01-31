@@ -70,7 +70,7 @@ export const GamesPage = () => {
             ) : (
               filteredGames.map((game) => (
                 <NavLink key={game.id} className='ano' to={`/game-details/${game.id}`}>
-                  <div id='cont' className="col-lg-3 col-md-6 col-sm-12">
+                  <div id='cont' className="">
                     <div className="item">
                       <img className='img-g' src={game.background_image} alt={`${game.name} image`} />
                       <h4 className="game-name">

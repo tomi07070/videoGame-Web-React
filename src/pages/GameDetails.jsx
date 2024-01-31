@@ -94,8 +94,8 @@ export const GameDetails = () => {
                     <h3 className='h3'>Description: <p className='p'> {gameDetails.description_raw}</p></h3>
                     <h2 className='h2-achi'>Achievements:</h2>
                     {achievements.length > 0 ? (
-                       <div>
-                       <ul className="grid grid-cols-2 gap-20 ">
+                       <div className='div-d'>
+                       <ul className="ul-achi">
     {achievements.map((achievement, index) => (
         <li className='li-achi' key={index}>
             {achievement.name && (
@@ -137,7 +137,7 @@ export const GameDetails = () => {
                     <div>
                         {/* ... other game details rendering ... */}
                         {screenshots.length > 0 ? (
-                            <div className="grid grid-cols-2 ml-10 mt-20">
+                            <div className="div-container">
                                 {screenshots.map((screenshot, index) => (
                                     <img key={index} src={screenshot.image} alt={`Screenshot ${index}`} className="screenshot" />
                                 ))}

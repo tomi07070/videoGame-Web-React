@@ -27,12 +27,7 @@ export const Navbar = () => {
           <li className='li-1-n'><NavLink className='a-1-n' to={'/games'}>Video Games</NavLink></li>
           <li className='li-1-n'><NavLink className='a-1-n' to={'/devs'}>Developers</NavLink></li>
         </ul>
-        
       </nav>
-      <ul className='ul-1-n'>
-          <li className='li-2-n'><NavLink className='a-2-n' to={'/login'}>Login</NavLink></li>
-          <li className='li-2-n'><NavLink className='a-2-n-r' to={'/register'}>Register</NavLink></li>
-        </ul>
       <div className="bars-cont" id="abrir" onClick={handleAbrirClick}>
           <i className="fa-solid fa-bars"></i>
       </div>
